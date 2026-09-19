@@ -43,6 +43,12 @@ export const materialGroups: MaterialGroup[] = [
     date: "Saturday, 19 September 2026",
     materials: [
       {
+        id: "introduction",
+        title: "SomNOG 9 - Track Introduction",
+        type: "pptx",
+        href: "/materials/day-1/SomNOG-9-Track-Introduction.pptx",
+      },
+      {
         id: "schedule",
         title: "Schedule",
         description: "HTML and CSS notes with examples.",
