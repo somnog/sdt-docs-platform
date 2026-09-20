@@ -81,6 +81,12 @@ export const materialGroups: MaterialGroup[] = [
     date: "Sunday, 20 September 2026",
     materials: [
       {
+        id: "next.js_slides",
+        title: "Introduction to Next.js",
+        type: "pptx",
+        href: "/materials/day-2/SomNOG9_EMS_Presentation.pptx",
+      },
+      {
         id: "nextjs-setup",
         title: "Nextjs Setup Guide",
         type: "docs",
