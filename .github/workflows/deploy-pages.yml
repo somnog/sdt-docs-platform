@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -29,20 +30,20 @@ jobs:
           cache: npm
 
       - name: Install
-        run: npm install
+        run: npm ci
 
-      - name: Build with repository base path
+      - name: Build for custom domain
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
-          DOCS_BASE_URL: /${{ github.event.repository.name }}/docs/
-          PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io
+          VITE_BASE_PATH: /
+          DOCS_BASE_URL: /docs/
+          PUBLIC_SITE_URL: https://sd.somnog.so
         run: npm run build
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: web/dist
 

@@ -43,12 +43,6 @@ export const materialGroups: MaterialGroup[] = [
     date: "Saturday, 19 September 2026",
     materials: [
       {
-        id: "introduction",
-        title: "SomNOG 9 - Track Introduction",
-        type: "pptx",
-        href: "/materials/day-1/SomNOG-9-Track-Introduction.pptx",
-      },
-      {
         id: "schedule",
         title: "Schedule",
         description: "HTML and CSS notes with examples.",
@@ -56,11 +50,29 @@ export const materialGroups: MaterialGroup[] = [
         href: "/docs/day-1/schedule/",
       },
       {
+        id: "introduction",
+        title: "SomNOG 9 - Track Introduction",
+        type: "pptx",
+        href: "/materials/day-1/SomNOG-9-Track-Introduction.pptx",
+      },
+      {
         id: "groups",
         title: "Groups and responsibilities",
         // description: "Presentation used during the Git & GitHub session.",
         type: "xlsx",
         href: "/materials/day-1/Groups_and_responsibilities.xlsx",
+      },
+      {
+        id: "microservices",
+        title: "From Monolith to Microservices",
+        type: "pdf",
+        href: "/materials/day-1/From Monolith to Microservices.pdf",
+      },
+      {
+        id: "nestjs",
+        title: "Introduction to NestJS",
+        type: "pdf",
+        href: "/materials/day-1/Introduction to NestJS — SomNOG9.pdf",
       },
     ],
   },
