@@ -79,7 +79,14 @@ export const materialGroups: MaterialGroup[] = [
   {
     day: "Day 2",
     date: "Sunday, 20 September 2026",
-    materials: [],
+    materials: [
+      {
+        id: "nextjs-setup",
+        title: "Nextjs Setup Guide",
+        type: "docs",
+        href: "/docs/day-2/next.js-setup/",
+      },
+    ],
   },
   {
     day: "Day 3",
