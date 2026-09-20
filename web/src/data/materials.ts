@@ -92,6 +92,12 @@ export const materialGroups: MaterialGroup[] = [
         type: "docs",
         href: "/docs/day-2/next.js-setup/",
       },
+      {
+        id: "microservices-setup",
+        title: "Microservices setup using nest.js and prisma",
+        type: "docs",
+        href: "/docs/day-2/microservices-setup/",
+      },
     ],
   },
   {
