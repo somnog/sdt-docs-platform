@@ -21,9 +21,10 @@ function normalizePath(value, fallback) {
  *
  * /docs/
  *
- * GitHub Pages example:
+ * On the custom domain sd.somnog.so there is no
+ * repository path segment, so the default is simply:
  *
- * /somnog9-workshop/docs/
+ * /docs/
  */
 const baseUrl = normalizePath(process.env.DOCS_BASE_URL, "/docs/");
 
@@ -51,14 +52,14 @@ const mainBasePath = baseUrl.endsWith("/docs/")
  *
  * Example:
  *
- * https://somnog.so
+ * https://sd.somnog.so
  */
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 const mainSiteOrigin = (
   isDevelopment
     ? "http://localhost:5173"
-    : process.env.PUBLIC_SITE_URL || "https://somnog.so"
+    : process.env.PUBLIC_SITE_URL || "https://sd.somnog.so"
 ).replace(/\/+$/, "");
 
 /**
@@ -113,11 +114,11 @@ module.exports = {
    *
    * Correct:
    *
-   * https://somnog.so
+   * https://sd.somnog.so
    *
    * Do NOT add /docs/ here.
    */
-  url: process.env.PUBLIC_SITE_URL || "https://somnog.so",
+  url: process.env.PUBLIC_SITE_URL || "https://sd.somnog.so",
 
   /**
    * Docusaurus itself lives under /docs/.
