@@ -109,6 +109,13 @@ export const materialGroups: MaterialGroup[] = [
   {
     day: "Day 3",
     date: "Monday, 21 September 2026",
-    materials: [],
+    materials: [
+      {
+        id: "nestjs",
+        title: "From Code to Production Docker, CI, and Standard Deployment",
+        type: "pdf",
+        href: "/materials/day-3/deployment-docker-pipelines.pdf",
+      },
+    ],
   },
 ];
