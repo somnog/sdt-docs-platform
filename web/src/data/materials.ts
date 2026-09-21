@@ -87,6 +87,12 @@ export const materialGroups: MaterialGroup[] = [
         href: "/materials/day-2/SomNOG9_EMS_Presentation.pptx",
       },
       {
+        id: "auth_conetxt",
+        title: "AUTH CONTEXT, PROTECTED ROUTES AND ROLES",
+        type: "pptx",
+        href: "/materials/day-2/Authentication-Service-Frontend-SomNOG9-Day2.pptx",
+      },
+      {
         id: "nextjs-setup",
         title: "Nextjs Setup Guide",
         type: "docs",
